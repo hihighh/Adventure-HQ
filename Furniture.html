@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Furniture</title>
+    <link rel="icon" type="" href="icon/camp.ico">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Adventure HQ</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Basket.html">Basket</a></li>
+            </ul>
+            <a href="login.html" class="action_btn">Log in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+            <li><a href="Furniture.html">Furniture</a></li>
+            <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li><a href="Basket.html">Basket</a></li>
+            <li><a href="login.html" class="action_btn">Log in</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+
+
+    </script>
+
+
+
+
+
+    <div class="search_box">
+        <input type="text" class="input" placeholder="search...">
+        <div class="btn btn_common">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <div class="card">
+        <img src="product/table1.jpg" alt="" style="width:100%">
+        <h1> Wood Folding Chair and Table</h1>
+        <p class="pbefore">690 AED</p>
+        <p class="price">459 AED</p>
+        <p>Yahome 3 Piece Patio Bistro Set - Wood Folding Chair and Table Metal Folding Dining Table for Garden Porch Furniture Outdoor Area Office Use</p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+
+    <div class="card">
+        <img src="product/sofa1.jpg" alt="" style="width:100%">
+        <h1>Sofa</h1>
+        <p class="pbefore">1050 AED</p>
+        <p class="price">799 AED</p>
+        <p>EM 6-Piece Sofa Covers for Two Persons, Stretch Velvet Slipcovers for Couch with 2 Cushions, Custom Fit Furniture Covers Thick Soft Washable (Dark Brown)</p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="product/chair1.jpg" alt="" style="width:100%">
+        <h1>Office chair</h1>
+        <p class="pbefore">799 AED</p>
+        <p class="price">455 AED</p>
+        <p>Flash Furniture Office Chair, 64.77 x 62.23 x 44.78 cm</p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+
+
+    <br />
+    <br />
+    <div class="pdf">
+        <iframe src="Camping.pdf"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>About us</h3>
+            <p>
+                The company was founded by a group of outdoors enthusiasts who were passionate about sharing their love of nature with others. Over the years, the company grew and expanded, opening new campsites and becoming known for their commitment to providing exceptional camping experiences.
+            </p>
+
+
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/AdventureHQme/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/adventure_hq" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/user/AdventureHQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/adventurehq/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyRights" class="copyRights">
+            <p>&copy; 2023 <a href="https://www.instagram.com/lmra._x/" target="_blank">Lamar Alherafi</a> All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

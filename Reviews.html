@@ -1,0 +1,266 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reviews</title>
+    <link rel="icon" type="image/x-icon" href="icon/camp.ico">
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Adventure HQ</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Basket.html">Basket</a></li>
+            </ul>
+            <a href="login.html" class="action_btn">Log in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+            <li><a href="Furniture.html">Furniture</a></li>
+            <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li><a href="Basket.html">Basket</a></li>
+            <li><a href="login.html" class="action_btn">Log in</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+
+
+    </script>
+
+    <!--this is a form where clients can drop their feedback-->
+    <!--according to our doctor, sending the feedback by email is backend,-->
+    <section>
+        <div class="form-box3">
+            <div class="form-value1">
+                <form action="#">
+                    <h2>Feel free to submit your feedback here</h2>
+                    <!--label to enter first name-->
+                    <div class="inputbox">
+                        <ion-icon name="F-name"></ion-icon>
+                        <input type="text" required>
+                        <label for="#">First name</label>
+                    </div>
+                    <!--label to enter last name-->
+                    <div class="inputbox">
+                        <ion-icon name="L-name"></ion-icon>
+                        <input type="text" required>
+                        <label for="#">Last name</label>
+                    </div>
+                    <!--label to enter the client email-->
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="#">Email</label>
+                    </div>
+                    <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="5" />
+                        <label for="star-a"></label>
+
+                        <input type="radio" name="stars" id="star-b" value="4" />
+                        <label for="star-b"></label>
+
+                        <input type="radio" name="stars" id="star-c" value="3" />
+                        <label for="star-c"></label>
+
+                        <input type="radio" name="stars" id="star-d" value="2" />
+                        <label for="star-d"></label>
+
+                        <input type="radio" name="stars" id="star-e" value="1" />
+                        <label for="star-e"></label>
+                    </div>
+
+                    <!--label to enter the client email-->
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="#">Feedback</label>
+                    </div>
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+    <section id="comments">
+
+        <div class="comment-heading">
+            <span>Comments</span>
+            <h1>Client comments</h1>
+        </div>
+
+
+        <div class="comment-box-container">
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="image/mark.jpg" alt="" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Mark Williams</strong>
+                            <span>@mark.w</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>I had a fantastic experience with this camping company. The staff was knowledgeable, friendly, and always willing to help with anything we needed. The equipment was top-notch, and the campsites were well-maintained. Overall, I would highly recommend this company to anyone looking for a great camping trip.</p>
+                </div>
+            </div>
+
+
+            <div class="comment-box-container">
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="image/rich.jpg" alt="" />
+                            </div>
+                            <div class="name-user">
+                                <strong>Rich Davis</strong>
+                                <span>@Richdaviss</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comment">
+                        <p>I am so impressed with the level of service and quality of equipment provided by this camping company. The staff was knowledgeable and friendly, and they clearly take pride in their work. The campsites were beautiful, and we had a wonderful time exploring the surrounding area. I would highly recommend this company to anyone looking for a great outdoor adventure</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="image/emma.jpg" alt=""/>
+                            </div>
+                            <div class="name-user">
+                                <strong>Emma Anderson</strong>
+                                <span>@And.emma</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comment">
+                        <p>This camping company exceeded my expectations in every way. The equipment was clean and in excellent condition, and the campsites were stunning. The staff was friendly and helpful, and they even went out of their way to accommodate some special requests we had. I can't say enough good things about this company and would definitely use them again in the future.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="image/Farah.jpeg" alt=""/>
+                            </div>
+                            <div class="name-user">
+                                <strong>Farah Akras</strong>
+                                <span>@Farahh.A</span>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="client-comment">
+                        <p>I  recently used this camping company for a trip, and I couldn't be happier with the experience. From the moment I made my reservation, the staff was friendly and helpful. The equipment was in excellent condition and made for a comfortable stay, and the campsites were well-maintained. I highly recommend this company to anyone looking for a great camping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>About us</h3>
+            <p>
+                The company was founded by a group of outdoors enthusiasts who were passionate about sharing their love of nature with others. Over the years, the company grew and expanded, opening new campsites and becoming known for their commitment to providing exceptional camping experiences.
+            </p>
+
+
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/AdventureHQme/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/adventure_hq" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/user/AdventureHQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/adventurehq/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyRights" class="copyRights">
+            <p>&copy; 2023 <a href="https://www.instagram.com/lmra._x/" target="_blank">Lamar Alherafi</a> All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+</html>

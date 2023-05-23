@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Offers & Packages</title>
+    <link rel="icon" type="image/x-icon" href="icon/camp.ico">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Adventure HQ</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Basket.html">Basket</a></li>
+            </ul>
+            <a href="login.html" class="action_btn">Log in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+            <li><a href="Furniture.html">Furniture</a></li>
+            <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li><a href="Basket.html">Basket</a></li>
+            <li><a href="login.html" class="action_btn">Log in</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+    <div class="search_box">
+        <input type="text" class="input" placeholder="search...">
+        <div class="btn btn_common">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="product/offer1.jpg" alt="" style="width:100%">
+        <h1> 13 Best Camping Packages</h1>
+        <p class="pbefore">2599 AED</p>
+        <p class="price">1999 AED</p>
+        <p>It comes with a five-person tent and rain fly, two sleeping bags, two camping chairs, and one cooler. The tent is spacious and is constructed with fiberglass poles that are both durable and easy to construct.</p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+
+    <div class="card">
+        <img src="product/offer2.jfif" alt="" style="width:100%">
+        <h1>ZION: 5 Person Tent & Gear Rental</h1>
+        <p class="pbefore">2399 AED</p>
+        <p class="price">1599 AED</p>
+        <p>
+            1x 5+ Person Premium Camping Tent
+            5x Premium Camp Chairs
+            1x Electric Camp lamp
+            5x Premium Sleeping Bags
+            5x Premium Sleeping Pads
+            5x Premium Camping Pillows
+            1x Premium Cooler
+            1x Premium Camp Stove
+            1x Camp Table
+            5x Premium Headlamps
+        </p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+
+    <div class="card">
+        <img src="product/FirstAid.jpg" alt="" style="width:100%">
+        <h1>Survival First Aid Kit with Bag</h1>
+        <p class="pbefore">599 AED</p>
+        <p class="price">389 AED</p>
+        <p>
+            250 Piece Survival First Aid Kit with Bag Compatible with MOLLE System and Emergency Tent, Earthquake Emergency Kit for Outdoor Adventures Camping Hiking Hunting Gifts for Men and Women
+            Brand: HIHEGD
+        </p>
+        <p><button onclick="location.href='Basket.html'" type="button">Add to Cart</button></p>
+    </div>
+
+
+
+
+
+
+    <div class="map">
+        <h2>Vist us </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28901.129714743984!2d55.38552922516232!3d25.11400378565324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f63b0209a7c8b%3A0x81020cf836ebfd11!2sAcademic%20City%20-%20Dubai!5e0!3m2!1sen!2sae!4v1684026989230!5m2!1sen!2sae" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>About us</h3>
+            <p>
+                The company was founded by a group of outdoors enthusiasts who were passionate about sharing their love of nature with others. Over the years, the company grew and expanded, opening new campsites and becoming known for their commitment to providing exceptional camping experiences.
+            </p>
+
+
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/AdventureHQme/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/adventure_hq" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/user/AdventureHQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/adventurehq/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyRights" class="copyRights">
+            <p>&copy; 2023 <a href="https://www.instagram.com/lmra._x/" target="_blank">Lamar Alherafi</a> All Rights Reserved</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
